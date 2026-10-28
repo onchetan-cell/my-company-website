@@ -88,22 +88,24 @@ p { color: var(--muted); }
 }
 
 /* Brand & Header */
+/* Brand and logo */
 .brand {
   display: inline-flex;
   align-items: center;
-  gap: 10px;
+  gap: 12px;
+  flex-shrink: 0;
+  min-width: 0;
 }
 
 .brand-logo {
-  height: 43px;
-  max-width: 145px;
+  height: 44px;
+  width: auto;
+  max-width: 200px;
   object-fit: contain;
 }
 
 .brand-copy {
-  display: flex;
-  flex-direction: column;
-  line-height: 1.2;
+  display: none; /* Hides duplicate text since your logo image already has the text */
 }
 
 .brand-copy strong {
