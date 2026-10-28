@@ -91,16 +91,9 @@ function BrandLogo() {
     <a className="brand" href="#home" aria-label={`${COMPANY.name} home`}>
       <img
         className="brand-logo"
-        src="./logo.png"
+        src={`${import.meta.env.BASE_URL}logo.png`}
         alt="Samgan Digital Tech Logo"
-        onError={(event) => {
-          event.currentTarget.style.display = "none";
-        }}
       />
-      <span className="brand-copy">
-        <strong>SAMGAN</strong>
-        <small>DIGITAL TECH</small>
-      </span>
     </a>
   );
 }
@@ -135,7 +128,11 @@ function HeroVisual() {
 
       <div className="art-core">
         <div className="core-glow" />
-        <div className="core-mark">S<span>✳</span></div>
+        <img
+          className="core-logo-img"
+          src={`${import.meta.env.BASE_URL}logo.png`}
+          alt="Logo"
+        />
         <span className="core-caption">IDEAS INTO IMPACT</span>
       </div>
 
@@ -163,7 +160,6 @@ function HeroVisual() {
     </div>
   );
 }
-
 function Navbar() {
   return (
     <header className="site-header">
