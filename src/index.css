@@ -89,23 +89,17 @@ p { color: var(--muted); }
 
 /* Brand & Header */
 /* Brand and logo */
-.brand {
-  display: inline-flex;
-  align-items: center;
-  gap: 12px;
-  flex-shrink: 0;
-  min-width: 0;
-}
-
 .brand-logo {
-  height: 44px;
+  height: 40px;
   width: auto;
-  max-width: 200px;
+  max-width: 160px;
   object-fit: contain;
 }
 
 .brand-copy {
-  display: none; /* Hides duplicate text since your logo image already has the text */
+  display: flex;
+  flex-direction: column;
+  line-height: 1.2;
 }
 
 .brand-copy strong {
@@ -116,13 +110,20 @@ p { color: var(--muted); }
 }
 
 .brand-copy small {
-  margin-top: 5px;
+  margin-top: 2px;
   color: var(--mint);
   font-size: 0.62rem;
   font-weight: 700;
   letter-spacing: 0.2em;
 }
 
+/* Style for logo image inside hero round orb */
+.core-logo-img {
+  width: 90px;
+  height: 90px;
+  object-fit: contain;
+  border-radius: 50%;
+}
 .site-header {
   position: sticky;
   top: 0;
