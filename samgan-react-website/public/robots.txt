@@ -1,3 +1,0 @@
-User-agent: *
-Allow: /
-Sitemap: https://onchetan-cell.github.io/my-company-website/sitemap.xml
