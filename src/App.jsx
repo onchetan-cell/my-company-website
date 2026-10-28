@@ -90,15 +90,12 @@ function BrandLogo() {
     <a className="brand" href="#home" aria-label={`${COMPANY.name} home`}>
       <img
         className="brand-logo"
-        src={`${import.meta.env.BASE_URL}logo.png`}
-        alt=""
+        src="./logo.png"
+        alt="Samgan Digital Tech Logo"
         onError={(event) => {
           event.currentTarget.style.display = "none";
         }}
       />
-      <span className="brand-fallback" aria-hidden="true">
-        S<span>✳</span>
-      </span>
       <span className="brand-copy">
         <strong>SAMGAN</strong>
         <small>DIGITAL TECH</small>
