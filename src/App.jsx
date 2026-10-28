@@ -1,3 +1,4 @@
+import logoImg from "../logo.png";
 import { useEffect } from "react";
 
 const COMPANY = {
