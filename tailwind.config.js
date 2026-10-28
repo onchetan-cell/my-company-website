@@ -7,7 +7,7 @@ export default {
   theme: {
     extend: {
       colors: {
-        mist: '#f8fafc', // or your desired custom color hex code
+        ink: '#0f172a', // or your preferred dark ink color hex code
       },
     },
   },
