@@ -17,7 +17,9 @@
   --accent: #61ead5;
 }
 
-* {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
 }
 
