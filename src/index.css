@@ -89,40 +89,31 @@ p { color: var(--muted); }
 
 /* Brand & Header */
 /* Brand and logo */
+/* Brand and logo */
+.brand {
+  display: inline-flex;
+  align-items: center;
+  flex-shrink: 0;
+  min-width: 0;
+}
+
 .brand-logo {
-  height: 40px;
+  height: 42px;
   width: auto;
-  max-width: 160px;
+  max-width: 180px;
   object-fit: contain;
+  display: block;
 }
 
 .brand-copy {
-  display: flex;
-  flex-direction: column;
-  line-height: 1.2;
+  display: none !important;
 }
 
-.brand-copy strong {
-  color: #f2f5ff;
-  font-size: 0.94rem;
-  font-weight: 800;
-  letter-spacing: 0.13em;
-}
-
-.brand-copy small {
-  margin-top: 2px;
-  color: var(--mint);
-  font-size: 0.62rem;
-  font-weight: 700;
-  letter-spacing: 0.2em;
-}
-
-/* Style for logo image inside hero round orb */
+/* Style for logo inside the Hero round orb */
 .core-logo-img {
-  width: 90px;
-  height: 90px;
+  width: 100px;
+  height: 100px;
   object-fit: contain;
-  border-radius: 50%;
 }
 .site-header {
   position: sticky;
